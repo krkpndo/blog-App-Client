@@ -19,7 +19,7 @@ export default function UpdateBlog() {
   const fetchBlogDetails = () => {
     const token = localStorage.getItem('token');
     
-    fetch(`http://localhost:4000/blogs/viewBlog/${id}`, {
+    fetch(`https://blog-app-api-06de.onrender.com/blogs/viewBlog/${id}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token') || ''}`, // Add token if required
       },
@@ -54,7 +54,7 @@ export default function UpdateBlog() {
     setIsUpdating(true);
 
     const token = localStorage.getItem('token');
-    fetch(`http://localhost:4000/blogs/updateBlog/${id}`, {
+    fetch(`https://blog-app-api-06de.onrender.com/blogs/updateBlog/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

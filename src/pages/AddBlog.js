@@ -26,7 +26,7 @@ export default function AddBlog({ fetchData }) {
 
     const token = localStorage.getItem('token');
 
-    fetch('http://localhost:4000/blogs/addPost', {
+    fetch('https://blog-app-api-06de.onrender.com/blogs/addPost', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

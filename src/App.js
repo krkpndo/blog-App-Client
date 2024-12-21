@@ -32,7 +32,7 @@ function App() {
 
   
   if(localStorage.getItem('token')){
-      fetch(`https://blogapp-server-z9m1.onrender.com/users/details`, {
+      fetch(`https://blog-app-api-06de.onrender.com/users/details`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

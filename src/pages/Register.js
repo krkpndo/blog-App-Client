@@ -34,7 +34,7 @@ export default function Register(){
 
 
 
-		fetch(`http://localhost:4000/users/register`, {
+		fetch(`https://blog-app-api-06de.onrender.com/users/register`, {
 			method: 'POST',
 			headers: {
 				"Content-Type" : 'application/json'

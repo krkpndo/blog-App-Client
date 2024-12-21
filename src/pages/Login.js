@@ -15,7 +15,7 @@ export default function Login() {
     const authenticate = (e) => {
         e.preventDefault();
 
-        fetch(`http://localhost:4000/users/login`, {
+        fetch(`https://blog-app-api-06de.onrender.com/users/login`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, password }),
@@ -40,7 +40,7 @@ export default function Login() {
     };
 
     const retrieveUserDetails = (token) => {
-        fetch(`http://localhost:4000/users/details`, {
+        fetch(`https://blog-app-api-06de.onrender.com/users/details`, {
             headers: { Authorization: `Bearer ${token}` },
         })
         .then(response => response.json())

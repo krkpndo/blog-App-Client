@@ -16,7 +16,7 @@ export default function DeleteBlog() {
     const token = localStorage.getItem('token');
     setLoading(true);
 
-    fetch(`http://localhost:4000/blogs/deleteBlog/${id}`, {
+    fetch(`https://blog-app-api-06de.onrender.com/blogs/deleteBlog/${id}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${token}`,

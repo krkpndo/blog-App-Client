@@ -11,7 +11,7 @@ export default function MyBlogs() {
   const fetchUserBlogs = () => {
     const token = localStorage.getItem('token');
 
-    fetch("http://localhost:4000/blogs/getMyBlogs", {
+    fetch("https://blog-app-api-06de.onrender.com/blogs/getMyBlogs", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

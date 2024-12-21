@@ -9,7 +9,7 @@ export default function GetBlogs() {
   const [error, setError] = useState(null);
 
   const fetchData = () => {
-    let fetchUrl = "hhttp://localhost:4000/blogs/getAllBlogs";
+    let fetchUrl = "https://blog-app-api-06de.onrender.com/blogs/getAllBlogs";
 
     fetch(fetchUrl, {
       headers: {
